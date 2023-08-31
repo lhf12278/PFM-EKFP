@@ -30,7 +30,7 @@ Pytorch 2.0.0 & torchvision 0.15.0
     else:
         attn = torch.bmm(q, k.transpose(-2, -1))     
     attn = softmax(attn, dim=-1)
-  ```
+   ```
   
   After the modification is as follows:
   ```
@@ -43,7 +43,7 @@ Pytorch 2.0.0 & torchvision 0.15.0
         attn = torch.bmm(q, k.transpose(-2, -1))
         attn = softmax(attn, dim=-1)
     #attn = softmax(attn, dim=-1)
-  ```
+   ```
 
 
 ### Prepare Datasets
@@ -92,7 +92,7 @@ We utilize 1 RTX3090 GPU for training.
 * Doenload project
 ```
 git clone https://github.com/lhf12278/PFM-EKFP.git
-cd ./PFM_EKFR
+cd ./PFM_EKFP
 ```
 
 * Create environment
@@ -102,7 +102,7 @@ conda activate xxx
 ```
 * Environment configuration
 ```
-pip install -r requirements.txt
+pip install -r requirement.txt
 ```
 * Training
 ```shell
@@ -117,7 +117,6 @@ python test.py
 ## Contact
 
 If you have any questions, please feel free to contact me. ( ysd999@163.com ).
-
 
 
 
